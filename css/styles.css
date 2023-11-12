@@ -619,8 +619,6 @@ Second main section*/
   margin-right: auto;
 }
 input {
-  width: 264px;
-  height: 40px;
   border-radius: 4px;
   border: 1px solid var(--White-background);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -677,6 +675,7 @@ input {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
+  background: #fcfcfc;
 }
 .close-button {
   position: absolute;
@@ -702,13 +701,7 @@ input {
   fill: var(--White-background);
 }
 
-.modal-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 8px;
-  height: 8px;
-}
 .paragraph-modal {
-  color: var(--Dark);
   text-align: center;
 
   /* Body Medium */
@@ -760,7 +753,7 @@ input {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--Text);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
@@ -791,7 +784,7 @@ input {
 }
 .modal-svg-input {
   position: relative;
-  color: var(--Subtle-Text);
+  color: var(--Text);
 }
 .modal-comment-input {
   margin-bottom: 16px;
@@ -839,10 +832,25 @@ input {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:hover,
 .modal-input:focus {
   border-color: #4d5ae5;
 }
 .modal-input:focus + svg {
   fill: #4d5ae5;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.footer-input-email {
+  width: 264px;
+  height: 40px;
 }
