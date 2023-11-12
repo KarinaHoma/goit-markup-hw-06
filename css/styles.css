@@ -622,7 +622,7 @@ input {
   width: 264px;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid var(--WHITE, #fff);
+  border: 1px solid var(--White-background);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   color: var(--White-background);
@@ -672,7 +672,6 @@ input {
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
-  background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -780,7 +779,7 @@ input {
 }
 .modal-body {
   padding: 72px 24px 24px 24px;
-  background-color: var(--dairy);
+  background-color: var(--Modal-background);
   width: 408px;
   min-height: 584px;
   top: 50%;
@@ -789,7 +788,6 @@ input {
   transform: translate(-50%, -50%) scale(1);
   display: block;
   border-radius: 4px;
-  background: #fcfcfc;
 }
 .modal-svg-input {
   position: relative;
@@ -827,7 +825,7 @@ input {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--#8e8f99);
+  color: #8e8f99;
   display: block;
   margin-bottom: 4px;
 }
@@ -845,6 +843,6 @@ input {
 .modal-input:focus {
   border-color: #4d5ae5;
 }
-.modal-input:focus > .modal-icon-input {
+.modal-input:focus + svg {
   fill: #4d5ae5;
 }
